@@ -38,7 +38,7 @@ async(Void, citel,text) => {
     //     model: "text-davinci-002",
     //     prompt: text,
     //     temperature: 0.5,
-    //     max_tokens: 80,
+    //     max_tokens: 800,
     //     top_p: 1.0,
     //     frequency_penalty: 0.5,
     //     presence_penalty: 0.0,
@@ -73,9 +73,8 @@ cmd({
     use: '<an astronaut in mud.>',
     filename: __filename,
 },
-async(Void, citel,text,{isCreator}) => 
+async(Void, citel,text) => 
 {
-//if (!isCreator) return citel.reply(tlang().owner)
 if (Config.OPENAI_API_KEY=='') return citel.reply('You Dont Have OPENAI_API_KEY \nPlease Create OPEN API KEY from Given Link \nhttps://platform.openai.com/account/api-keys');
 if (!text) return citel.reply(`*Give Me A Query To Get Dall-E Reponce ?*`); 
 const imageSize = '256x256'
@@ -105,45 +104,6 @@ Void.sendMessage(citel.chat,{image:{url:data.data[0].url}})
 }
 )
 
-//---------------------------------------------------------------------------
-cmd({
-        pattern: "repo",
-        alias: ["git", "sc", "script"],
-        desc: "Sends info about repo.",
-        category: "general",
-        filename: __filename,
-    },
-    async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `Hey ${citel.pushName}\n
-*⭐ Total Stars:* ${data.stargazers_count} stars
-*🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* citel-x.herokuapp.com/repo
-*Group:* citel-x.herokuapp.com/support
-*Deploy Your Own:*-
-citel-x.herokuapp.com`
-        let buttonMessaged = {
-            image: { url: await botpic() },
-            caption: cap,
-            footer: tlang().footer,
-            headerType: 4,
-            contextInfo: {
-                externalAdReply: {
-                    title: "Secktor-Repo",
-                    body: "Easy to Use",
-                    thumbnail: log0,
-                    mediaType: 4,
-                    mediaUrl: '',
-                    sourceUrl: ``,
-                },
-            },
-        };
-        return await Void.sendMessage(citel.chat, buttonMessaged, {
-            quoted: citel,
-        });
-
-    }
-)
 //---------------------------------------------------------------------------
 cmd({
         pattern: "status",
