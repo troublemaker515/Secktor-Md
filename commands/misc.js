@@ -60,7 +60,7 @@ async(Void, citel, text,{ isCreator }) => {
          },
          async(Void, citel, text) => {
 let a = await getBuffer(`https://citel-x.herokuapp.com/attp/${text}`)
- return citel.reply(a,{packname:'Secktor',author:'ATTP'},"sticker") 
+ return citel.reply(a,{packname:'TroubleMaker',author:'ATTP'},"sticker") 
          }
      )
  cmd({
@@ -71,7 +71,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/attp/${text}`)
          },
          async(Void, citel, text) => {
 let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
- return citel.reply(a,{packname:'Secktor',author:'TTP'},"sticker") 
+ return citel.reply(a,{packname:'TroubleMaker',author:'TTP'},"sticker") 
          }
      )
      //---------------------------------------------------------------------------
