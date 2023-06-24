@@ -91,7 +91,7 @@ cmd({
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbC`,
+            caption: `*Group Name: Support group*\n*Group Link:* https://chat.whatsapp.com/GN7fX5kg6QZ1lP0Qb86SfE`,
         });
 
     }
@@ -471,7 +471,7 @@ cmd({
             filename: __filename,
         },
         async(Void, citel) => {
-            const fetchlb = await Levels.fetchLeaderboard("RandomXP", 5);
+            const fetchlb = await Levels.fetchLeaderboard("RandomXP", 20);
             let leadtext = `
 *-------------------------------*
 *----● LeaderBoard ● -----*
