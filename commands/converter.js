@@ -57,7 +57,8 @@ cmd({
          use: '<query>',
          filename: __filename
      },
-     async(Void, citel, text) => {
+     async(Void, citel, text,{isCreator}) => {
+if (!isCreator) return citel.reply(tlang().owner)
 try {
 const quot = citel.msg.contextInfo.quotedMessage.viewOnceMessageV2;
 if(quot)
