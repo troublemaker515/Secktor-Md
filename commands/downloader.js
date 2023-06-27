@@ -154,7 +154,7 @@ cmd({
         }
     )
     //---------------------------------------------------------------------------
-cmd({
+/* cmd({
             pattern: "play",
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
@@ -190,7 +190,7 @@ cmd({
             });
 
         }
-    )
+    )*/
     //---------------------------------------------------------------------------
 cmd({
             pattern: "ringtone",
