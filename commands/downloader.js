@@ -94,6 +94,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "video",
+	    alias :['v'],
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
