@@ -153,7 +153,7 @@ cmd({
             };
             let res = await axios.post("https://bot.lyo.su/quote/generate", body);
             let img = Buffer.alloc(res.data.result.image.length, res.data.result.image, "base64");
-            return citel.reply(img,{packname:'TroubleMaker┃ᴮᴼᵀ',author:'Quotely'},"sticker")
+            return citel.reply(img,{packname:'TroubleMaker┃ᴮᴼᵀ',author:'🖤'},"sticker")
 
         }
     )
