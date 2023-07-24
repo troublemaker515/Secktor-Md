@@ -36,7 +36,7 @@ module.exports = {
   BRANCH: 'main', 
   ALIVE_MESSAGE:  process.env.ALIVE_MESSAGE === undefined ? '𝐇𝐞𝐲 𝐎𝐩𝐞𝐧 𝐀𝐈 𝛁𝟑 𝐈𝐬 𝐀𝐥𝐢𝐯𝐞 𝐓𝐲𝐩𝐞 .𝐦𝐞𝐧𝐮 𝐓𝐨 𝐆𝐞𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭' : process.env.ALIVE_MESSAGE,
   autobio:  process.env.AUTO_BIO === undefined ? false : process.env.AUTO_BIO,
-  OPENAI_API_KEY:  process.env.OPENAI_API_KEY === undefined ? 'bhtJy5dkXqzi4MdHb2AJT3BlbkFJnjwrWOR6Nyl0gC2wd16c' false : process.env.OPENAI_API_KEY,
+  OPENAI_API_KEY:  process.env.OPENAI_API_KEY === undefined ? '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' false : process.env.OPENAI_API_KEY,
   heroku:  process.env.heroku === undefined ? false : process.env.heroku,
   HEROKU: {
     HEROKU: process.env.HEROKU ||false,
